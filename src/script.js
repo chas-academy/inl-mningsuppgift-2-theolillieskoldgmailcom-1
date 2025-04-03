@@ -22,7 +22,7 @@ export function initSearch(people) { // rör ej denna rad
     if(person === writtenName){
     // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
     found = true
-    resultDisplay.innerHTML = "Namn Hittades! " + writtenName
+    resultDisplay.innerHTML = "Namn Hittades!"
     } 
     }
     // 6. Om du efter loopen inte hittat något, skriv ut "Namn hittades inte." och gör found till false igen.
