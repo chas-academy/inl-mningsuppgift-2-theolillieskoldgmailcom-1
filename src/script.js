@@ -1,13 +1,13 @@
 // Definera array av namn
-let people = ["Kevin", "Theo"]
+let people = ["Kevin", "Theo", "Felicia", "Inez", "Alex"]
 
 
 export function initSearch(people) { // rör ej denna rad
 
   // Hämta HTML-element
   const searchInput = document.getElementById("searchInput")
-  const htmlButton = document.getElementById("searchBtn")
-  const htmlResult = document.getElementById("resultDisplay")
+  const searchBtn = document.getElementById("searchBtn")
+  const resultDisplay = document.getElementById("resultDisplay")
   
   // Lägg till en klickhändelse på "Sök"-knappen
   searchBtn.addEventListener("click",() => {
@@ -22,13 +22,13 @@ export function initSearch(people) { // rör ej denna rad
     if(person === writtenName){
     // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
     found = true
-    htmlResult.innerHTML = "Namn Hittades! " + writtenName
+    resultDisplay.innerHTML = "Namn Hittades! " + writtenName
     } 
     }
     // 6. Om du efter loopen inte hittat något, skriv ut "Namn hittades inte." och gör found till false igen.
     if(!found){
       found = false
-      htmlResult.innerHTML = "Namn hittades inte."
+      resultDisplay.innerHTML = "Namn hittades inte."
     }
     });
 }
